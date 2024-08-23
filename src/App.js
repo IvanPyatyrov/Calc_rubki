@@ -124,7 +124,7 @@ const handleTonnChange = (e) => {
  useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://api.netlify.com/api/v1/badges/734086da-88af-4434-b795-ae230400fd9e/deploy-status", {
+        const response = await axios.get("https://app.netlify.com/sites/steady-banoffee-903971/deploys", {
           params: { kod: "УТ000000539" }
         });
         const item = response.data.find((item) => item.kod === "УТ000000539");
